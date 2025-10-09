@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Промокоды и подписка</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      gap: 30px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #1DB954;
+      margin-bottom: 10px;
+    }
+
+    .nickname {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1DB954;
+      margin-bottom: 20px;
+    }
+
+    .promo-button {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      max-width: 450px;
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      overflow: hidden;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .promo-button:hover {
+      transform: scale(1.02);
+    }
+
+    .promo-button img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .promo-text {
+      padding: 10px 15px;
+      font-size: 16px;
+      line-height: 1.4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .promo-text b {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
+    }
+.promo-text b {
+  animation: slideIn 0.5s ease forwards;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.promo-button:hover .promo-text b {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .promo-button {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .promo-button img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .promo-text {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+}
+.promo-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.8);
+}
+
+.promo-button img {
+  transition: transform 0.3s ease;
+}
+
+.promo-button:hover img {
+  transform: rotate(10deg) scale(1.1);
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: #000;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1DB954;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 2px #8a2be2; /* фиолетовое свечение */
+  transition: box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  box-shadow: 0 0 20px 5px #8a2be2;
+}
+
+.nickname {
+  font-size: 22px;
+  font-weight: bold;
+  color: #8a2be2;
+  text-shadow: 0 0 10px #8a2be2;
+  margin-bottom: 20px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nickname:hover {
+  color: #bb7fff;
+  text-shadow: 0 0 20px #bb7fff;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #8a2be2;
+  box-shadow: 0 0 10px #8a2be2;
+  margin-bottom: 10px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #8a2be2;
+  }
+  to {
+    box-shadow: 0 0 20px #bb7fff;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <img src="ava.png" alt="Аватар" class="avatar" />
+  <div class="nickname">@demox1w</div>
+
+
+  <!-- Кнопка 1win -->
+  <a href="https://1wilib.life/?p=zk6w" target="_blank" rel="noopener noreferrer" class="promo-button">
+    <img src="1w.png" alt="1win" />
+    <div class="promo-text">
+      <b>1win</b>
+      <br>STARMAXXX (бонус 500%)<br>ВВОДИТЬ ПРИ РЕГИСТРАЦИИ
+    </div>
+  </a>
+
+   <!-- Новая кнопка Aviamasters (стала второй) -->
+  <a href="https://1win.com/v3/5267/fortune-wheel-aviamasters" target="_blank" rel="noopener noreferrer" class="promo-button">
+    <img src="avia.png" alt="Aviamasters" />
+    <div class="promo-text">
+      <b>Aviamasters</b>
+      Промокод STARMAXXX дает 50 фри спинов!<br>Не упускай полет!
+    </div>
+  </a>
+
+  <!-- Новая кнопка - бот сигналов (стала третьей) -->
+  <a href="https://t.me/demoxsignals_bot" target="_blank" rel="noopener noreferrer" class="promo-button">
+    <img src="bot.png" alt="Бот сигналов" />
+    <div class="promo-text">
+      <b>1WIN СИГНАЛЫ</b>
+      Бот с сигналами на luckyjet и mines
+    </div>
+  </a>
+
+  <!-- Кнопка Telegram канал -->
+  <a href="https://t.me/demox1w" target="_blank" rel="noopener noreferrer" class="promo-button">
+    <img src="tele.png" alt="Telegram" />
+    <div class="promo-text">
+      <b>Telegram</b>
+      Официальный канал, полный<br>разбор схемы
+    </div>
+  </a>
+
+  <footer>© 2025 Твое Имя</footer>
+<div id="particles-js"></div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS('particles-js', {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#8a2be2"
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.5
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "move": {
+        "enable": true,
+        "speed": 2
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+</body>
+</html>
+
